@@ -1,0 +1,133 @@
+.bijia_title {
+text-align: center;
+font-size: 17px;
+width: 90%;
+margin: 0 auto;
+margin-top: 16px;
+height: 200px;
+}
+.bijia_img {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.bijia_img img {
+  width: 170px;
+}
+.bijia_product{
+  position: relative;
+}
+.bijia_collect {
+  
+  margin-right: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
+.bijia_collect img {
+  width: 39px;
+  height: 39px;
+}
+.bijia_tab {
+  width: 100%;
+  margin-top: 20px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+  overflow: hidden;
+  background-color: #ffbb00;
+  border-top:  solid 1px #c14d00;
+  border-bottom:1px solid #c14d00;
+}
+.bijia_tab li {
+  width: 33.33%;
+  float: left;
+  background: #ffbb00;
+  text-align: center;
+}
+.bijia_tab li:nth-child(2) {
+  border-left: 1px solid #c14d00;
+  border-right: 1px solid #c14d00;
+}
+.bijia_tab li a {
+  color: #fff;
+  display: block;
+  height: 34px;
+  width: 100%;
+}
+.bijia_list table {
+  margin-top: 12px;
+}
+.bijia_list a {
+  color: #000;
+}
+.bijia_list img {
+  vertical-align: middle;
+}
+ td {
+  line-height: 22px;
+  /* padding-top: 10px */
+}
+.red {
+  color: #d10311;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.bijialist-down {
+  margin-top:8px;
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+  color: #888;
+  padding: 8px 10px;
+  line-height: 18px;
+}
+.bijia_comment {
+  border-top: 4px solid #7a7a7a;
+  background: #fff;
+}
+.comment_title {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  overflow: hidden;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+}
+.bijia_comment li {
+  padding: 10px;
+  padding-bottom: 0px;
+  line-height: 18px;
+  margin-top: 3px;
+  border-bottom:1px solid #ccc;
+  color:#000;
+  font-size: 12px;
+}
+.comment-from{
+margin-bottom: 10px;
+}
+.comment_content {
+  color: #000;
+  line-height: 22px;
+  padding-top: 5px;
+  margin-top: 8px;
+}
+.comment_more {
+  padding: 0 8px;
+  margin-top: 16px;
+}
+.comment_more a {
+  display: block;
+  height: 32px;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+  color: #000;
+}

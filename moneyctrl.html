@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+
+<body>
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header_app clearfix">
+
+      <a href="index.html" class="header_back"></a>
+      <h2>省钱控 - 最新优惠</h2>
+      <a href="javascript:;" class="header_home"></a>
+    </div>
+    <div class="mm_product">
+      <ul id="pd_ul">
+
+      </ul>
+      <!-- 更多商品 -->
+      <div class="page">
+        <span>
+          <a href="javascript:;" id="prv">上一页</a>
+        </span>
+        <span>
+          <select name="" id="sele">
+              <!-- <option value="1" selected>10</option> -->
+          </select>
+        </span>
+        <span>
+          <a href="javascript:;" id="next">下一页</a>
+        </span>
+      </div>
+    </div>
+
+
+<!-- 底部 -->
+    <div class="mm_footer">
+      <div class="foot_top">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#" style="width: 40%;border: 0px;">
+          <img src="./img/top.jpg" alt="">
+          返回顶部</a>
+      </div>
+      <div class="foot_down">
+        <p>
+          <a href="javascript:;" style="color:red">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a>
+          --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/html" id="prd_tmp">
+
+    {{each result v i}}
+<li class="clearfix">
+  <a href="moneyproduct.html?productid={{v.productId}}">
+    <div class="pic">
+        {{#v.productImgSm}}
+    </div>
+    <div class="info">
+      <div class="title">
+        <span>{{v.productName}}</span>
+        <span>{{v.productPinkage}}</span>
+      </div>
+      <div class="other">
+       <span class="fl">{{v.productFrom}} | {{v.productTime}}</span>
+       <span class="fr pl">{{ v.productComCount.replace("有" , "").replace("人评论" , "") }}</span>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+{{/each}}
+
+  </script>
+<script type="text/html" id="page">
+{{each arr v i}}
+ <option value="{{i+1}}">第{{i+1}}页</option>
+{{/each}}
+</script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/moneyctrl.js"></script>
+  <script>
+ 
+  </script>
+</body>
+
+</html>

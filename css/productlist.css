@@ -1,0 +1,25 @@
+
+.info .tit {
+  color: #333;
+  line-height: 22px;
+  min-height: 44px;
+  font-size: 14px;
+}
+.info .price {
+  height: 25px;
+  margin-top: 4px;
+}
+.info .price span {
+  font-size: 18px;
+  color:#ea3900;
+  vertical-align: middle;
+  float: left;
+  font-weight: bold;
+}
+.product_list .info .other {
+color:#a1a1a1;
+font-size: 12px;
+}
+.product_list .info .other span {
+  margin-right: 10px;
+}

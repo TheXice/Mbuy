@@ -1,0 +1,40 @@
+.mm_header_app {
+  width: 100%;
+  height: 44px;
+  background: #ff841d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left:50px;
+  padding-right:50px;
+}
+.mm_container {
+  padding-top: 44px;
+}
+.mm_header_app a {
+  width: 50px;
+  height: 44px;
+  position: absolute;
+  top: 0px;
+}
+.mm_header_app .header_back {
+  left: 0px;
+  background: url('../img/back.png') no-repeat;
+  background-position: center;
+ background-size: 20px;
+}
+.mm_header_app .header_home {
+  right: 0px;
+  background: url('../img/header_app.png') no-repeat;
+  background-size: 32px;
+  background-position: center;
+}
+.mm_header_app h2 {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}

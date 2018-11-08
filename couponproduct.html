@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header_app clearfix">
+
+      <a href="coupon.html" class="header_back"></a>
+      <h2 id="header"></h2>
+      <a href="javascript:;" class="header_home"></a>
+    </div>
+
+   <div class="cou-main">
+     <div class="top-title">
+      --点餐前出示手机中的优惠券，即可享受优惠--
+     </div>
+     <div class="cou-product">
+       <ul>
+
+       </ul>
+     </div>
+   </div>
+
+
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="foot_top">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#" style="width: 40%;border: 0px;">
+          <img src="./img/top.jpg" alt="">
+          返回顶部</a>
+      </div>
+      <div class="foot_down">
+        <p>
+          <a href="javascript:;" style="color:red">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a>
+          --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/html" id="tmp">
+  
+  {{each result v i}}
+  <li>
+    <a href="#" id="bj">
+      <div class="pic">
+      {{#v.couponProductImg}}
+      </div>
+      <div class="info">
+          <div class="tit">{{v.couponProductName}}</div>
+          <div class="price">
+            <span id='money'>{{v.couponProductPrice}}</span>
+          </div>
+          <div class="other">
+            <span id="time">{{v.couponProductTime}}</span>
+          </div>
+      </div>
+  
+    </a>
+  </li>
+
+  {{/each}}
+  
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/couponproduct.js"></script>
+</body>
+
+</html>

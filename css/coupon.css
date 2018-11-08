@@ -1,0 +1,122 @@
+.mm_header_app {
+  width: 100%;
+  height: 44px;
+  background: #f4483e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left:50px;
+  padding-right:50px;
+}
+.mm_header_app a {
+  width: 50px;
+  height: 44px;
+  position: absolute;
+  top: 0px;
+}
+.mm_header_app .header_back {
+  left: 0px;
+  background: url('../img/back.png') no-repeat;
+  background-position: center;
+ background-size: 20px;
+}
+.mm_header_app .header_home {
+  right: 0px;
+  background: url('../img/header_app.png') no-repeat;
+  background-size: 32px;
+  background-position: center;
+}
+.mm_header_app h2 {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.coumain ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.coumain ul li {
+  
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  display: block;
+  height: 75px;
+  margin-left: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: center;
+  width: 31%;
+  font-size: 12px;
+}
+.coumain ul li a {
+  color: #000;
+}
+.coumain ul li img {
+  max-height: 50px;
+  width: 50px;
+}
+.cou-product ul {
+  background: #fff;
+}
+.cou-product ul li {
+  border-bottom: 1px solid #e7e7e7;
+  overflow: hidden;
+}
+.cou-product ul li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.pic {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+  float: left;
+}
+.pic img {
+  width: 100px;
+  height: 100px;
+}
+.cou-product.info {
+  padding-right: 30px;
+  overflow: hidden;
+}
+.top-title{
+  font-size: 12px;
+  text-align: center;
+  color: rgb(153, 153, 153);
+  margin: 8px 0px;
+}
+.tit {
+  margin: 0px;
+  padding: 0px;
+  word-break: break-all;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  line-height: 20px;
+}
+#money {
+  font-size: 100%;
+  color: #000;
+}
+.other {
+  margin-top: 8px;
+}
+#time {
+  font-size: 12px;
+    color: #EE7700;
+    margin-top: 10px;
+} 

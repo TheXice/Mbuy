@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header_app clearfix">
+
+      <a href="index.html" class="header_back"></a>
+      <h2>优惠券</h2>
+      <a href="javascript:;" class="header_home"></a>
+    </div>
+    <div class="coumain">
+      <ul class="clearfix">
+
+
+      </ul>
+    </div>
+
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="foot_top">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#" style="width: 40%;border: 0px;">
+          <img src="./img/top.jpg" alt="">
+          返回顶部</a>
+      </div>
+      <div class="foot_down">
+        <p>
+          <a href="javascript:;" style="color:red">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a>
+          --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/html" id="tmp">
+
+    {{each result v i}}
+
+  <li style="width:118px;">
+
+    <a href="{{v.couponLink}}?coupond={{v.couponId}}&couponTitle={{v.couponTitle}}">
+      <img src="{{v.couponImg}}" alt="">
+    <p>   {{v.couponTitle}}</p>
+    </a>
+  </li>
+  {{/each}}
+  
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/coupon.js"></script>
+</body>
+
+</html>

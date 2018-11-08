@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+
+<body>
+<div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header_app clearfix">
+
+        <a href="moneyctrl.html" class="header_back"></a>
+        <h2>国内折扣</h2>
+        <a href="javascript:;" class="header_home"></a>
+      </div>
+<!-- 主体 -->
+<div class="mp-main">
+<div class="mp-content">
+  <div class="mp_title">
+    <h3></h3>
+  </div>
+  <div class="mp_info">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="mp_describe">
+    <div class="lf-pic"></div>
+    <div class="md-cnt">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  <div class="place">
+    <span class="place-box">
+      <div class="drop">
+
+      </div>
+    </span>
+  </div>
+  <div class="gobuy">
+    <a href="#">前往购买</a>
+  </div>
+</div>
+<div class="ewm">
+  <img src="./img/mmbweixin2.png" alt="">
+</div>
+<div class="mp_pl">
+</div>
+</div>
+
+
+
+
+<!-- 底部 -->
+<div class="mm_footer">
+    <div class="foot_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width: 40%;border: 0px;">
+        <img src="./img/top.jpg" alt="">
+        返回顶部</a>
+    </div>
+    <div class="foot_down">
+      <p>
+        <a href="javascript:;" style="color:red">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        --掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="tmp">
+{{each result v i}}
+
+<h3>{{v.productName}}</h3>
+
+{{/each}}
+
+</script>
+<script type="text/html" id="tmp-1">
+  {{each result v i}}
+  <span>{{v.productFrom}}</span>
+  <span>{{v.productTime}}</span>
+  <span>{{v.productTips}}</span>
+  {{/each}}
+
+</script>
+<script type="text/html" id="tmp-2">
+  {{each result v i}}
+  <p>{{v.productInfo}}</p>
+  <p>{{v.productInfo1}}</p>
+  <p>{{#v.productImg2}}</p>
+\
+  {{/each}}
+
+</script>
+<script type="text/html" id="tmp-3">
+  {{each result v i}}
+{{#v.productImgSm}}
+  {{/each}}
+
+</script>
+<script type="text/html" id="tmp-4">
+  {{each result v i}}
+{{#v.productCity}}
+  {{/each}}
+
+</script>
+<script type="text/html" id="tmp-5">
+  {{each result v i}}
+{{#v.productComment}}
+  {{/each}}
+
+</script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/moneyproduct.js"></script>
+</body>
+
+</html>

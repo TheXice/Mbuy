@@ -1,0 +1,65 @@
+.in_content {
+  max-width: 960px;
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.in_content ul {
+  display: table;
+  width: 100%;
+  padding: 0 0 10px 0;
+  
+}
+.in_content ul li{
+  float: left;
+  display: table-cell;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  width: 50%;
+  background: #fff;
+  border:1px solid #eee;
+  border-top-width: 0;
+  overflow: hidden;
+}
+.in_content ul li a {
+  display: block;
+}
+.in-img {
+  margin: 10px auto;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+}
+.in-img img {
+  width: 140px;
+  height: 140px;
+}
+.in_content ul li a h6 {
+  color: #333;
+  padding: 0 8px;
+  text-align: left;
+  height: 36px;
+  line-height: 18px;
+  padding: 0 8px;
+  overflow: hidden;
+}
+.money {
+  color: #ff6c00;
+  margin-top: 4px;
+  font-size: 14px;
+  padding: 0 8px;
+  text-align: left;
+  text-align-last: left;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+}
+.in_content ul li a span {
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #a1a1a1;
+  text-align: left;
+  float: left;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="mm_container">
+    <!-- 头部 -->
+    <div class="mm_header clearfix">
+      <a href="index.html" class="header_logo">
+        <img src="./img/header_logo.png" alt="">
+      </a>
+      <a href="#" class="header_app">
+        <img src="./img/header_app.png" alt="">
+      </a>
+    </div>
+    <!-- 搜索 -->
+    <div class="mm_search">
+      <form action="">
+        <input type="text" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+      </form>
+    </div>
+    <!-- 菜单 -->
+    <div class="mm_menu">
+
+    </div>
+    <!-- 列表清单 -->
+    <div class="mm_listTitle">
+      <span>超值折扣推荐</span>
+      <img src="./img/more.png" alt="">
+    </div>
+    <!-- 商品列表 -->
+    <div class="mm_product">
+      <ul id="pd_ul">
+
+      </ul>
+      <!-- 更多商品 -->
+      <div class="mm_morebar">
+        <a href="moneyctrl.html">更多优惠信息 »</a>
+      </div>
+    </div>
+    <div class="mm_listTitle">
+      <span>品牌排行</span>
+      <img src="./img/more.png" alt="">
+    </div>
+    <!-- 底部 -->
+    <div class="mm_footer">
+      <div class="foot_top">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" style="width: 40%;border: 0px;">
+            <img src="./img/top.jpg" alt="">
+            返回顶部</a>
+      </div>
+      <div class="foot_down">
+      <p>
+        <a href="javascript:;" style="color:red">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        --掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/html" id="menu_tmp">
+    <ul class="clearfix">
+    {{each result v i}}
+    {{if i > 7}}
+    <li class="hide">
+        <a href="{{v.titlehref}}.html">
+          <img src="img/{{v.img}}" alt="">
+          <p>{{v.name}}</p>
+        </a>
+      </li>
+    {{else}}
+    <li>
+      <a href="{{v.titlehref}}.html">
+        <img src="img/{{v.img}}" alt="">
+        <p>{{v.name}}</p>
+      </a>
+    </li>
+    {{/if}}
+    {{/each}}
+  </ul>
+  
+  
+  </script>
+  <script type="text/html" id="prd_tmp">
+
+    {{each result v i}}
+<li class="clearfix">
+  <a href="moneyproduct.html?productid={{v.productId}}">
+    <div class="pic">
+        {{#v.productImgSm}}
+    </div>
+    <div class="info">
+      <div class="title">
+        <span>{{v.productName}}</span>
+        <span>{{v.productPinkage}}</span>
+      </div>
+      <div class="other">
+       <span class="fl">{{v.productFrom}} | {{v.productTime}}</span>
+       <span class="fr pl">{{ v.productComCount.replace("有" , "").replace("人评论" , "") }}</span>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+{{/each}}
+
+  </script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
